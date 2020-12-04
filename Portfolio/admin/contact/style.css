@@ -1,0 +1,245 @@
+
+
+html, body{
+    height: 100%;
+  font-family: 'Lora', serif;
+    padding: 0px;
+    margin: 0px;
+    background: #6f6f6f;
+}
+header{
+   background: #214C9D;
+   height: 66px;
+}
+header *{
+   color: white;
+}
+*{
+   box-sizing: border-box;
+}
+header .logo{
+   float: left;
+   height: 66px;
+   margin-left: 2em;
+}
+header  .logo-text{
+   margin: 9px;
+   font-family: 'candal', serif;
+}
+header  .logo-text span{
+   color: #000;
+}
+header ul{
+   float: right;
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+}
+header ul li{
+   float: left;
+   position: relative;
+}
+header ul li ul{
+   position: absolute;
+   top: 66px;
+   right: 0px;
+   width: 180px;
+   display: none;
+}
+header ul li:hover ul{
+   display: block;
+}
+header ul li ul li{
+   width: 100%;
+}
+header ul li ul li a{
+   padding: 10px;
+   background-color: #fff;
+   color: #444;
+}
+header ul li ul li a.logout{
+   color: red;
+}
+header ul li ul li a:hover{
+   background: #d5d6d6;
+}
+header ul li a{
+   display: block;
+   padding: 21px;
+   font-size: 1.1em;
+   text-decoration: none;
+}
+header ul li a:hover{
+   background: #006669;
+   transition: 0.5s;
+}
+header .menu-toggle{
+   display: none;
+}
+.admin-wrapper{
+ display: flex;
+ height: calc(100% - 66px);
+}
+.admin-wrapper .left-sidebar{
+ flex: 2;
+ height: 100%;
+ background:blue;
+}
+.admin-wrapper .left-sidebar ul{
+ list-style:none;
+ margin: 0px;
+ padding: 0px;
+ color: aliceblue; 
+}
+.admin-wrapper .left-sidebar ul li a{
+ padding: 10px;
+ display: block;
+ color: white!important;
+ border-bottom: 1px solid #004044;
+ text-decoration: none;
+}
+.admin-wrapper .left-sidebar ul li a:hover{
+ background:#214C9D 
+}
+.admin-wrapper .admin-content{
+ flex: 8;
+ height: 100%;
+ padding: 40px 100px 100px;
+ overflow-y: scroll;
+}
+.admin-content .page-title{
+ text-align: center;
+ margin-bottom: 1.5em;
+}
+.btn{
+ padding: .5em 1rem;
+ background: #006559;
+ color: white;
+ border: 1px solid transparent;
+ border-radius: .25rem;
+ text-decoration: none;
+}
+.btn:hover{
+ color: white !important;
+ background: #006669;
+}
+.text-input{
+ padding: .7em 1rem;
+ display: block;
+ width: 100%;
+ border-radius: 5px;
+ border: 1px solid #e0e0e0;
+ outline: none;
+ color: #444;
+ line-height: 1.5em;
+ font-size: 1.2em;
+ font-family: 'Lora', serif;
+}
+
+
+.content li:nth-child(even){
+ padding: 20px;
+ background: #f2f2f2;
+}
+
+.admin-content ul li span{
+    margin-left: 15px;
+ margin-top: 5px;
+ display: block;
+}
+.admin-content ul li{
+    margin-top: 10px;
+    background-color: rgb(228, 167, 167);
+    list-style: decimal;
+}
+ul li div{
+    margin-top: -60px;
+    margin-right: 10px;
+    float: right;
+}
+.content li span:nth-child(2){
+ font-size: 16px;
+ margin-top: 6px;
+ color: #999;
+}
+
+.content li div{
+ position: absolute;
+ top: 16px;
+ right: 10px;
+ color:red;
+ background: rgba(255,255,255,0.6);
+ text-align: center;
+ padding: 10px 0;
+ font-weight:  bold;
+ cursor:  pointer;
+}
+.content form input{ 
+ width: 38%;
+ margin: 0;
+ border: 0;
+ border-bottom: 1px solid #eee;
+ margin: 0 1%;
+ padding: 10px;
+ display: block;
+ box-sizing: border-box;
+ font-size: 18px;
+}
+
+.content form input:focus{
+ outline: none;
+ border-bottom: 3px solid #88236f;
+ padding-bottom: 8px;
+ transition: all ease 0.2s;
+}
+
+.content form:after{
+ content: '';
+ clear: both;
+ display: block;
+}
+.content button{
+ border: 0;
+ background:#ca5858;
+ border-radius: 10px;
+ padding: 13px;
+ width: 14%;
+ box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+ font-weight: bold;
+ font-family: ubuntu;
+}
+form div{
+ margin-bottom: 15px;
+}
+
+#blog-list{
+ list-style-type: none;
+ padding: 0;
+}
+
+#blog-list li{
+ margin-top:10px;
+ height: 350px;
+ width: 100%;
+ padding: 20px;
+ background: #f6f6f6;
+ font-size: 20px;
+ color: #555;
+ position: relative;
+ border-bottom: 1px solid #e6e6e6;
+}
+#blog-list a {
+ margin-left: 85%;
+}
+#blog-list li h3{
+ margin-left: 10%;
+ color: blue;
+}
+#blog-list li img{
+ height: 250px;
+ width: 250px;
+}
+#blog-list li p{
+ margin-top: -230px;
+ margin-left: 45%;
+}

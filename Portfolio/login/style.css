@@ -1,0 +1,222 @@
+
+
+html, body{
+	height: 100%;
+     font-family: 'Lora', serif;
+	 padding: 0px;
+	 margin: 0px;
+	 background: #6f6f6f;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.clearfix{
+	min-height: 100%;
+}
+.btn{
+	padding: .5em 1rem;
+	background: #006559;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+}
+.btn:hover{
+	color: white !important;
+	background: #006669;
+}
+.text-input{
+	padding: .7em 1rem;
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #e0e0e0;
+	outline: none;
+	color: #444;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	font-family: 'Lora', serif;
+}
+header{
+	background: blue;
+	height: 66px;
+}
+header *{
+	color: white;
+}
+*{
+	box-sizing: border-box;
+}
+header .logo{
+	float: left;
+	height: 66px;
+	margin-left: 2em;
+}
+header  .logo-text{
+	margin: 9px;
+	font-family: 'candal', serif;
+}
+header  .logo-text span{
+	color: #000;
+}
+header ul{
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+header ul li{
+	float: left;
+	position: relative;
+}
+header ul li ul{
+	position: absolute;
+	top: 66px;
+	right: 0px;
+	width: 180px;
+	display: none;
+}
+header ul li:hover ul{
+	display: block;
+}
+header ul li ul li{
+	width: 100%;
+}
+header ul li ul li a{
+	padding: 10px;
+	background-color: #fff;
+	color: #444;
+}
+header ul li ul li a.logout{
+	color: red;
+}
+header ul li ul li a:hover{
+	background: #d5d6d6;
+}
+header ul li a{
+	display: block;
+	padding: 21px;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+header ul li a:hover{
+	background: #006669;
+	transition: 0.5s;
+}
+header .menu-toggle{
+	display: none;
+}
+ /* AUTH PAGES */
+   .auth-content{
+   	width: 30%;
+   	margin: 50px auto;
+   	padding: 20px;
+   	background: white;
+   	border-radius: 5px;
+   }
+   .auth-content .form-title{
+   	text-align: center;
+   }
+   .auth-content form div{
+   	margin-bottom: 10px;
+   }
+   .auth-content form p{
+   	text-align: center;
+   }
+   .auth-content form p a{
+   	text-decoration: underline;
+   }
+  .btn{
+  	padding: .5rem 1rem;
+  	background: #006669;
+  	color: white;
+  	border: 1px solid transparent;
+  	border-radius: .25rem;
+  	font-size: 1.08em;
+  	font-family: 'Lora', serif;
+
+  }
+  .btn-big{
+  	padding: .7rem 1.3rem;
+  	line-height: 1.3rem;
+  }
+  .btn:hover{
+  	color: white!important;
+  	background: #005255;
+  }
+  /* Media queries */
+@media only screen and (max-width: 1110px){
+	   .auth-content{
+   	width: 50%;
+   }
+}
+
+@media only screen and (max-width: 880px){
+	header{
+	position: relative;
+	}
+    .auth-content{
+   	width: 60%;
+    }
+    header  .logo-text{
+	font-size: 25px;
+	margin: 15px;
+    }
+	header ul{
+		width: 100%;
+		background: #0e94a0;
+		max-height: 0px;
+		overflow: hidden;
+	}
+	.showing{
+		max-height: 100em;
+	}
+	header ul li{
+	width: 100%;
+    }
+    header ul li ul{
+	position: static;
+	display: block;
+	width: 100%;
+    }
+    header ul li ul li a{
+	background:#0e94a0;
+	color: white;
+	padding-left: 50px;
+    }
+    header ul li ul li a:hover{
+    	background: #006669;
+    }
+    header ul li ul li a.logout{
+    color: red;
+    padding-left: 50px;
+    }
+    header .menu-toggle{
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 1.9em;
+    }
+    header .logo{
+	margin-left: .5em;
+    }
+    
+}
+@media only screen and (max-width: 685px){
+	header .logo-text{
+	font-size: 20px;
+	margin: 20px;
+    }
+	.auth-content{
+   	width: 90%;
+    }
+}
+@media only screen and (max-width: 480px){
+	 header  .logo-text{
+	font-size: 15px;
+	margin: 20px;
+	
+    }
+}

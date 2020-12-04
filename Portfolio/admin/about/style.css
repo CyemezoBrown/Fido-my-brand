@@ -1,0 +1,139 @@
+
+
+html, body{
+    height: 100%;
+  font-family: 'Lora', serif;
+    padding: 0px;
+    margin: 0px;
+    background: #6f6f6f;
+}
+header{
+   background: #214C9D;
+   height: 66px;
+}
+header *{
+   color: white;
+}
+*{
+   box-sizing: border-box;
+}
+header .logo{
+   float: left;
+   height: 66px;
+   margin-left: 2em;
+}
+header  .logo-text{
+   margin: 9px;
+   font-family: 'candal', serif;
+}
+header  .logo-text span{
+   color: #000;
+}
+header ul{
+   float: right;
+   margin: 0px;
+   padding: 0px;
+   list-style: none;
+}
+header ul li{
+   float: left;
+   position: relative;
+}
+header ul li ul{
+   position: absolute;
+   top: 66px;
+   right: 0px;
+   width: 180px;
+   display: none;
+}
+header ul li:hover ul{
+   display: block;
+}
+header ul li ul li{
+   width: 100%;
+}
+header ul li ul li a{
+   padding: 10px;
+   background-color: #fff;
+   color: #444;
+}
+header ul li ul li a.logout{
+   color: red;
+}
+header ul li ul li a:hover{
+   background: #d5d6d6;
+}
+header ul li a{
+   display: block;
+   padding: 21px;
+   font-size: 1.1em;
+   text-decoration: none;
+}
+header ul li a:hover{
+   background: #006669;
+   transition: 0.5s;
+}
+header .menu-toggle{
+   display: none;
+}
+.admin-wrapper{
+ display: flex;
+ height: calc(100% - 66px);
+}
+.admin-wrapper .left-sidebar{
+   flex: 2;
+ height: 100%;
+ background:blue;
+}
+.admin-wrapper .left-sidebar ul{
+ list-style:none;
+ margin: 0px;
+ padding: 0px;
+ color: aliceblue; 
+}
+.admin-wrapper .left-sidebar ul li a{
+ padding: 10px;
+ display: block;
+ color: white!important;
+ border-bottom: 1px solid #004044;
+ text-decoration: none;
+}
+.admin-wrapper .left-sidebar ul li a:hover{
+ background:#214C9D 
+}
+.admin-wrapper .right-sidebar{
+   flex: 8;
+   margin: 5%;
+}
+@media only screen and (max-width: 1024){
+    .admin-wrapper{
+      width: 100%;
+    }
+    .admin-wrapper .left-sidebar{
+      width: 20%;
+  
+    }
+    .admin-wrapper .admin-content{
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    header .logo-text {
+    margin: 15px;
+    font-size: 20px;
+    font-family: 'candal', serif;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    header .logo-text {
+    margin: 20px;
+    font-size: 15px;
+    font-family: 'candal', serif;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    header .logo-text {
+    margin: 25px;
+    font-size: 10px;
+    }
+  }

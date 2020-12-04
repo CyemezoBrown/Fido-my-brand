@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie.edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/ce20a13c2e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+
+	<title>Blog</title>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h1 class="logo-text"><span>CYEMEZO</span> Brown Fidele</h1>
+		</div>
+		<i class="fa fa-bars menu-toggle"></i>
+		<ul class="nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">Blog Posts</a></li>
+			<li><a href="../single blog/single.html">Article</a></li>
+		    <!--	<li>
+				<a href="#">
+					<i class="fa fa-user"></i>
+				      Brown
+				    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+			    </a>
+				<ul>
+					<li><a href="../login/login.html" class="login">Login</a></li>
+				    <li><a href="#" class="logout">Logout</a></li>
+				</ul>
+			</li>-->
+		</ul>		
+	</header>
+	
+	<!-- content -->
+	<div class="content clearfix">
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<div class="section search">
+				<h2 class="section-title">Search</h2>
+				<form action="index.html" method="post">
+					<input type="text" name="search-term" class="text-input" placeholder="Search...">
+				</form>
+			</div>
+
+			<div class="section topics">
+				<h2 class="section-title">Topics</h2>
+				<ul>
+					<li><a href="#"></a>Poems</li>
+					<li><a href="#"></a>Quotes</li>
+					<li><a href="#"></a>UI</li>
+					<li><a href="#"></a>Motivation</li>
+					<li><a href="#"></a>Football</li>
+					<li><a href="#"></a>Programming</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //Sidebar -->
+		<!-- Main content -->
+		<div class="main-content">
+			<h1 class="recent-post-title">Recent Posts</h1>
+			
+			<form id="add-blog-form"></form>
+			<ul id="blog-list"></ul>
+
+<!--
+			<div class="post clearfix">
+			    <form action="create.html" method="post" id="add-blog-form">	
+					<div class="post-preview">    	
+			    	    <h3>Title</h3><br>
+					    <h3><input type="text" name="title" placeholder="title" class="text-input"><br></
+					<label class="cover-image">Image</label><br>
+		    		<input type="file" name="coverImage" placeholder="image" class="text-input"><br>
+		    		<label>Description</label><br>
+					<textarea name="description" placeholder="description" id="body"></textarea><br>
+					<label>Body</label><br>
+					<textarea name="body" id="body" style="height: 250px;width:100%;" required placeholder="body">
+					</textarea><br>				   
+					<button type="submit" class="btn btn-big">Add post</button>
+					</div>    
+	    		</form>
+		    	<ul id="blog-list"></ul>
+		    </div> 
+			<form class="post clearfix">
+				<img src="../Images/coding.jpeg" alt="" class="post-image">
+				<div class="post-preview">
+					<h3><a href="../single blog/single.html">Coding in the Wild Coding for Financial Trading. By Brennen</a></h3>
+					<i class="far fa-user">Brown</i>
+					&nbsp;
+					<i class="far fa-calendar">Mar 20, 2020</i>
+					<p class="preview-text">
+						I recently came across an article which talked about how the recent advancements in technology and automation are disrupting some of the traditional roles.
+					</p>
+					<a href="../single blog/single.html" class="btn read-more">Read More</a>
+				</div>
+			</form>
+			<ul class="list-posts"></ul>
+			<div class="post clearfix">
+				<img src="../Images/coding.jpeg" alt="" class="post-image">
+				<div class="post-preview">
+					<h3><a href="single.html">Coding in the Wild Coding for Financial Trading. By Brennen</a></h3>
+					<i class="far fa-user">Brown</i>
+					&nbsp;
+					<i class="far fa-calendar">Mar 20, 2020</i>
+					<p class="preview-text">
+						I recently came across an article which talked about how the recent advancements in technology and automation are disrupting some of the traditional roles . 
+					</p>
+					<a href="../single blog/single.html" class="btn read-more">Read More</a>
+				</div>
+			</div>
+			<div class="post clearfix">
+				<img src="../Images/coding.jpeg" alt="" class="post-image">
+				<div class="post-preview">
+					<h3><a href="single.html">Coding in the Wild Coding for Financial Trading. By Brennen</a></h3>
+					<i class="far fa-user">Brown</i>
+					&nbsp;
+					<i class="far fa-calendar">Mar 20, 2020</i>
+					<p class="preview-text">
+						I recently came across an article which talked about how the recent advancements in technology and automation are disrupting some of the traditional roles. 
+					</p>
+					<a href="../single blog/single.html" class="btn read-more">Read More</a>
+				</div>
+			</div>
+			<div class="post clearfix">
+				<img src="../Images/coding.jpeg" alt="" class="post-image">
+				<div class="post-preview">
+					<h3><a href="single.html">Coding in the Wild Coding for Financial Trading. By Brennen</a></h3>
+					<i class="far fa-user">Brown</i>
+					&nbsp;
+					<i class="far fa-calendar">Mar 20, 2020</i>
+					<p class="preview-text">
+						I recently came across an article which talked about how the recent advancements in technology and automation are disrupting some of the traditional roles. 
+					</p>
+					<a href="../single blog/single.html" class="btn read-more">Read More</a>
+				</div>
+			</div>
+			<div class="post clearfix">
+				<img src="../Images/coding.jpeg" alt="" class="post-image">
+				<div class="post-preview">
+					<h3><a href="single.html">Coding in the Wild Coding for Financial Trading. By Brennen</a></h3>
+					<i class="far fa-user">Brown</i>
+					&nbsp;
+					<i class="far fa-calendar">Mar 20, 2020</i>
+					<p class="preview-text">
+						I recently came across an article which talked about how the recent advancements in technology and automation are disrupting some of the traditional roles. 
+					</p>
+					<a href="../single blog/single.html" class="btn read-more">Read More</a>
+				</div>
+			</div>
+
+		-->
+		</div>
+		<!-- //Main content -->
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="footer-bottom">
+			&copy; Blogs | Designed by Brown fidele
+		</div>
+	</div>
+
+	<!-- Jquery -->
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+	
+	<script src="../firebase/config.js" type="module"></script>
+	<script src="../admin/posts/blog.js" type="module"></script>
+	<!--<script src="../firebase/logout.js"></script>-->
+	<script src="scripts.js"></script>
+</body>
+</html>

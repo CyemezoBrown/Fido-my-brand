@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie.edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/ce20a13c2e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+
+
+
+	<title>Admin Section -Edit Article</title>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h1 class="logo-text"><span>CYEMEZO</span> Brown Fidele</h1>
+		</div>
+		<i class="fa fa-bars menu-toggle"></i>
+		<ul class="nav">
+			<li>
+				<a href="../../../index.html">Home</a>
+			</li>
+			<li>
+				<a href="../../Landing-page-blog/index.html">Blog Posts</a>
+			</li>
+			<li>
+				<a href="../../single blog/single.html">Article</a>
+			</li>
+			<li>
+				<a href="#">
+				<i class="fa fa-user"></i>
+				Brown
+				<i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+			    </a>
+		        <ul>
+				    <li><a href="../../index.html" class="logout">Logout</a></li>
+			    </ul>
+			</li>
+		</ul>		
+	</header>
+	
+	<!-- Admin page warapper -->
+	<div class="admin-wrapper">
+		
+		<!-- Left sidebar -->
+		<div class="left-sidebar">
+			<ul>
+				<li><a href="../posts/index.html">Manage Posts</a></li>
+                <li><a href="../Dash/dash.html">Article</a></li>
+                <li><a href="#">Edit article</a></li>
+			   <!--<li><a href="../users/create.html">Manage Users</a></li>
+				<li><a href="../topic/create.html">Manage Topics</a></li>
+				<li><a href="../about/index.html">About</a></li>
+				<li><a href="../skills/index.html">Skills</a></li>
+				<li><a href="../project/index.html">Project</a></li>
+				<li><a href="../user/index.html">User</a></li>-->
+                <li><a href="../contact/index.html">Contact</a></li>
+                
+		    </ul>
+
+			
+		</div>
+
+
+		<div class="admin-content">
+			<h2 class="page-title">Edit Article</h2>
+		    <div class="content" style="float: none;">
+			    <form id="edit-blog-form">	
+					<div>
+						<label for="">Title</label>
+						<input type="text" name="title" id="title" class="text-input"  required>
+					</div>
+					<div>					
+						<label class="cover-image">Image</label><br>
+						<input type="file" name="coverImage" accept="image/*" id="photo" placeholder="image" class="text-input" required><br>
+						<img id="image"/><br>						
+					</div>
+					<div>
+						<label for="body">Body</label>
+						<textarea name="body" cols="20" rows="15" class="text-input" required></textarea>
+					</div>
+					<button>Edit Post</button>
+	    		</form>
+		    	<ul id="edit-list"></ul>
+		    </div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-storage.js"></script>
+
+	<script src="../../firebase/config.js" type="module"></script>
+	<!--<script src="../../firebase/logout.js"></script>-->
+    <script src="edit.js" type="module"></script>
+    
+</body>
+</html>
